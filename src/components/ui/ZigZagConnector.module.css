@@ -1,0 +1,45 @@
+.connector {
+  position: absolute;
+  width: 20px;
+  height: 60px;
+  overflow: visible;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.connector.left {
+  margin-left: -30px;
+}
+
+.connector.right {
+  margin-left: 30px;
+}
+
+.svg {
+  width: 20px;
+  height: 60px;
+  overflow: visible;
+}
+
+.lineContainer {
+  position: relative;
+  width: 1.5px;
+  height: 60px;
+}
+
+.line {
+  width: 1.5px;
+  height: 100%;
+  border-radius: 1px;
+}
+
+.energyPulse {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 212, 255, 1) 0%, rgba(0, 212, 255, 0.5) 50%, transparent 70%);
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.8), 0 0 20px rgba(0, 212, 255, 0.4);
+}

@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { FaCode, FaPalette, FaLightbulb, FaWrench } from 'react-icons/fa';
+import { SectionMarker } from '../ui/SectionMarker';
 import styles from './Services.module.css';
 import skills from '../../data/skills.json';
 
@@ -38,11 +39,16 @@ export function Services() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          <span className={styles.label}>Services</span>
-          <h2 className={styles.title}>What I Do</h2>
-          <p className={styles.subtitle}>
-            Delivering comprehensive solutions tailored to your needs
-          </p>
+          <div className={styles.headerWithMarker}>
+            <SectionMarker active={isInView} position="left" />
+            <div>
+              <span className={styles.label}>Services</span>
+              <h2 className={styles.title}>What I Do</h2>
+              <p className={styles.subtitle}>
+                Delivering comprehensive solutions tailored to your needs
+              </p>
+            </div>
+          </div>
         </motion.div>
 
         <motion.div 

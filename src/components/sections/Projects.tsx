@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { SectionMarker } from '../ui/SectionMarker';
 import styles from './Projects.module.css';
 import projects from '../../data/projects.json';
 
@@ -31,11 +32,16 @@ export function Projects() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          <span className={styles.label}>Portfolio</span>
-          <h2 className={styles.title}>Featured Projects</h2>
-          <p className={styles.subtitle}>
-            A selection of projects that showcase my skills and experience
-          </p>
+          <div className={styles.headerWithMarker}>
+            <SectionMarker active={isInView} position="right" />
+            <div>
+              <span className={styles.label}>Portfolio</span>
+              <h2 className={styles.title}>Featured Projects</h2>
+              <p className={styles.subtitle}>
+                A selection of projects that showcase my skills and experience
+              </p>
+            </div>
+          </div>
         </motion.div>
 
         <motion.div 

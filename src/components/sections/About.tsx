@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { SectionMarker } from '../ui/SectionMarker';
 import styles from './About.module.css';
 
 const aboutContent = {
@@ -53,8 +54,13 @@ export function About() {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          <motion.span className={styles.label} variants={itemVariants}>About</motion.span>
-          <motion.h2 className={styles.title} variants={itemVariants}>{aboutContent.title}</motion.h2>
+          <div className={styles.headerWithMarker}>
+            <SectionMarker active={isInView} position="left" />
+            <div>
+              <motion.span className={styles.label} variants={itemVariants}>About</motion.span>
+              <motion.h2 className={styles.title} variants={itemVariants}>{aboutContent.title}</motion.h2>
+            </div>
+          </div>
         </motion.div>
 
         <div className={styles.content}>

@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaArrowRight } from 'react-icons/fa';
+import { SectionMarker } from '../ui/SectionMarker';
 import styles from './Contact.module.css';
 
 const contactContent = {
@@ -36,8 +37,13 @@ export function Contact() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <span className={styles.label}>Contact</span>
-          <h2 className={styles.title}>{contactContent.title}</h2>
+          <div className={styles.headerWithMarker}>
+            <SectionMarker active={isInView} position="right" />
+            <div>
+              <span className={styles.label}>Contact</span>
+              <h2 className={styles.title}>{contactContent.title}</h2>
+            </div>
+          </div>
           <p className={styles.subtitle}>{contactContent.subtitle}</p>
 
           <a href={`mailto:${contactContent.email}`} className={styles.emailLink}>

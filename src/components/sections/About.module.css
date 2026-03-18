@@ -24,6 +24,11 @@
   margin-bottom: 4rem;
 }
 
+.headerWithMarker {
+  display: flex;
+  align-items: flex-start;
+}
+
 .label {
   display: inline-block;
   font-size: 0.85rem;
