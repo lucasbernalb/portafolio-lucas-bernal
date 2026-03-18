@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Project One",
+      "description": "A modern web application built with React and Node.js. Features real-time data visualization and user authentication.",
+      "tech": ["React", "Node.js", "MongoDB", "Tailwind"],
+      "github": "#",
+      "live": "#",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
+    },
+    {
+      "id": 2,
+      "title": "Project Two",
+      "description": "Full-stack e-commerce platform with payment integration, admin dashboard, and inventory management.",
+      "tech": ["Vue.js", "Express", "PostgreSQL", "Stripe"],
+      "github": "#",
+      "live": "#",
+      "image": "https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop"
+    },
+    {
+      "id": 3,
+      "title": "Project Three",
+      "description": "Real-time collaborative tool with WebSocket integration, allowing teams to work together seamlessly.",
+      "tech": ["React", "Firebase", "TypeScript", "Socket.io"],
+      "github": "#",
+      "live": "#",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
+    }
+  ]
+}

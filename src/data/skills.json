@@ -1,0 +1,42 @@
+{
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": ["React", "Vue.js", "TypeScript", "Next.js", "Tailwind CSS", "SASS"]
+    },
+    {
+      "category": "Backend",
+      "items": ["Node.js", "Express", "Python", "PostgreSQL", "MongoDB", "REST APIs"]
+    },
+    {
+      "category": "Tools & DevOps",
+      "items": ["Git", "Docker", "AWS", "CI/CD", "Linux", "Nginx"]
+    },
+    {
+      "category": "Design",
+      "items": ["Figma", "UI/UX Design", "Responsive Design", "Animation", "Design Systems"]
+    }
+  ],
+  "services": [
+    {
+      "title": "Web Development",
+      "description": "Custom web applications built with modern technologies. Fast, secure, and scalable solutions.",
+      "icon": "code"
+    },
+    {
+      "title": "UI/UX Design",
+      "description": "Beautiful, intuitive interfaces that provide exceptional user experiences.",
+      "icon": "palette"
+    },
+    {
+      "title": "Consulting",
+      "description": "Technical advice on architecture, best practices, and technology selection.",
+      "icon": "lightbulb"
+    },
+    {
+      "title": "Maintenance",
+      "description": "Ongoing support, updates, and optimizations for your existing applications.",
+      "icon": "tools"
+    }
+  ]
+}
